@@ -18,12 +18,12 @@ namespace Xero.Api.Core.Endpoints
             _client = client;
         }
 
-        public Allocation Add(Allocation allocation)
-        {
-            var endpoint = string.Format("/api.xro/2.0/CreditNotes/{0}/Allocations", allocation.CreditNote.Id);
+        //public Allocation Add(Allocation allocation)
+        //{
+        //    var endpoint = string.Format("/api.xro/2.0/CreditNotes/{0}/Allocations", allocation.CreditNote.Id);
 
-            return (Allocation)Add(allocation, endpoint);
-        }
+        //    return (Allocation)Add(allocation, endpoint);
+        //}
 
         public CreditNoteAllocation Add(CreditNoteAllocation allocation)
         {

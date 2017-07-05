@@ -50,7 +50,7 @@ namespace Xero.Api.Core.Endpoints
             }
         }
 
-        public Model.File Find(Guid fileId)
+        public new  Model.File Find(Guid fileId)
         {
             var response = HandleFileResponse(Client
                 .Client.Get("files.xro/1.0/Files", ""));

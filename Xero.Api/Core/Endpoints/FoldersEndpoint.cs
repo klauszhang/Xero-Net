@@ -51,7 +51,7 @@ namespace Xero.Api.Core.Endpoints
       return result;
     }
 
-    public IList<Model.Folder> Find()
+    public new IList<Model.Folder> Find()
     {
       var response = HandleFoldersResponse(Client
           .Client.Get("files.xro/1.0/Folders", ""));
