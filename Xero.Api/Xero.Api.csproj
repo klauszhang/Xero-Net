@@ -134,6 +134,7 @@
     <Compile Include="Core\Response\OptionsResponse.cs" />
     <Compile Include="Infrastructure\Exceptions\RateExceededException.cs" />
     <Compile Include="Infrastructure\Exceptions\ValidationException.cs" />
+    <Compile Include="Infrastructure\Exceptions\ValidationExceptionWithApiException.cs" />
     <Compile Include="Infrastructure\Interfaces\IAuthenticationToken.cs" />
     <Compile Include="Infrastructure\Interfaces\IUser.cs" />
     <Compile Include="Infrastructure\Exceptions\ApiException.cs" />

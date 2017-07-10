@@ -108,7 +108,7 @@ namespace Xero.Api.Infrastructure.Http
 
                 if (data.Elements != null && data.Elements.Any())
                 {
-                    throw new ValidationException(data);
+                    throw new ValidationExceptionWithApiException(data);
                 }
 
                 //CHeck for inline errors
@@ -118,7 +118,7 @@ namespace Xero.Api.Infrastructure.Http
                 if (inlineValidationErrors.Any())
                 {
                     data.Elements = new List<DataContractBase> { new DataContractBase {ValidationErrors = inlineValidationErrors } };
-                    throw new ValidationException(data);
+                    throw new ValidationExceptionWithApiException(data);
                 }
 
                 throw new BadRequestException(data);
