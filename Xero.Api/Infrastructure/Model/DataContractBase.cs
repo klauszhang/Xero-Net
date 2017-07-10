@@ -3,12 +3,16 @@ using System.Runtime.Serialization;
 
 namespace Xero.Api.Infrastructure.Model
 {
-    [DataContract(Namespace = "")]
-    public class DataContractBase
-    {
-        [DataMember(EmitDefaultValue = false)]
-        public List<ValidationError> ValidationErrors { get; set; }
+  [DataContract(Namespace = "")]
+  public class DataContractBase
+  {
+    [DataMember(EmitDefaultValue = false)]
+    public List<ValidationError> ValidationErrors { get; set; }
 
+    [DataMember(EmitDefaultValue = false)]
+    public string InvoiceNumber { get; set; }
 
-    }
+    [DataMember(EmitDefaultValue = false)]
+    public string Name { get; set; }
+  }
 }
