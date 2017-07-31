@@ -67,7 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xero.Api\Xero.Api.csproj">
-      <Project>{2EB9F8BA-CCFF-4B43-99A0-5130D368C78F}</Project>
+      <Project>{2eb9f8ba-ccff-4b43-99a0-5130d368c78f}</Project>
       <Name>Xero.Api</Name>
     </ProjectReference>
   </ItemGroup>
