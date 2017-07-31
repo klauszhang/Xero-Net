@@ -1,7 +1,9 @@
 ﻿using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 namespace Xero.Api.Core.Model.Types
 {
+    [JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
     public enum ObjectType 
     {
         [EnumMember(Value = "ACCOUNT")]

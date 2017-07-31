@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
+using Newtonsoft.Json;
 
 namespace Xero.Api.Core.Model.Types
 {
     [DataContract(Namespace = "")]
+    [JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
     public enum SourceType
     {
         [EnumMember(Value = "ACCREC")]
